@@ -24,11 +24,14 @@ dataset/
 │   ├── not_fall/  
 │   └── bend/  
 └── test/  
-    ├── sitting/![fall-10-cam0-rgb-026](https://github.com/user-attachments/assets/de83b864-49f6-4d49-bcbd-42b8796e5795)
-    ├── fall/![fall-03-cam0-rgb-206](https://github.com/user-attachments/assets/0cbd5616-d132-4ef7-a45b-fcf60b2c5609)
-    ├── not_fall/![fall-09-cam0-rgb-011](https://github.com/user-attachments/assets/ea332f3e-e445-4413-940c-5b921c2696e0)
-    └── bend/![fall-01-cam0-rgb-097](https://github.com/user-attachments/assets/c0b444fe-a14e-4ad7-a1d0-377e80493219)
-```    
+    ├── sitting/
+    ├── fall/
+    ├── not_fall/
+    └── bend/
+```
+![Figure 2024-10-29 161143](https://github.com/user-attachments/assets/68c9d220-c5d4-4b23-bce8-815eceab6f64)
+![Figure 2024-10-13 172348](https://github.com/user-attachments/assets/7d28b3b6-61b0-49d8-a45e-aa9efe50ace6)
+  
 ##🧠 Model Architecture
 CNN Classifier:
 ```Sequential([
@@ -53,10 +56,11 @@ CNN Classifier:
 2. Confusion Matrix
 ```
 confusion_matrix(true_labels, predictions)
+```
 ![Figure 2024-10-29 161215](https://github.com/user-attachments/assets/ad4ccde4-b3f2-4879-a1a9-fe356603109e)
 ![Figure 2024-10-09 160122](https://github.com/user-attachments/assets/602bda68-783e-42eb-b705-a2d2ce9305d8)
 
-```
+
 3. Sample Alerts
 ```
 Alert: Fall incident detected for image 42. Please provide assistance immediately!
